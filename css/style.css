@@ -8,6 +8,7 @@ body{
 /* ===================================
          header area style 
    ===================================*/
+
 .top-banner{
     background-color: #161616;
     padding: 5%;
@@ -46,7 +47,91 @@ body{
     background-color: #ff0000;
     padding: 10px 20px;
     border-radius: 10px;
+    font-weight: bold;
+    transition: .5s;
+}
+.half-width a.button:hover{
+    color: #000000;
+    background-color: #ffffff;
 }
 .half-width a i{
     margin-left: 10px;
+}
+
+/* ===================================
+         Blog Section style 
+   ===================================*/
+.middle-section{
+    margin-top: 150px;
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.main-parent{
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-gap: 24px;
+}
+.left-side{
+    text-align: center;
+}
+.side-button{
+    background-color: #000000;
+    padding: 25px;
+    border-radius: 10px;
+}
+.side-button a{
+    text-decoration: none;
+    font-size: 18px;
+    display: inline-block;
+    background-color: #ffffff;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    width: 185px;
+    color: #000000;
+    font-weight: 500;
+    transition: 0.5s;
+}
+.side-button a.link-button{
+    padding: 14px 34px ;
+}
+.side-button a:hover{
+    background-color: red;
+    color: #ffffff;
+}
+.right-side{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 24px;
+}
+.card{
+    border: 1px solid lightgray;
+    border-radius: 10px;
+}
+.card img{
+    width: 100%;
+}
+.right-side .card-details{
+    padding: 20px;
+}
+.right-side .card-details a{
+    text-decoration: none;
+    border: 1px solid lightgray;
+    padding: 5px 15px;
+    border-radius: 5px;
+    color: #000000;
+    font-weight: 500;
+    transition: .5s;
+}
+.right-side .card-details a:hover{
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.icons i{
+    margin-right: 30px;
+}
+.icons span{
+    margin-left: -20px;
+    margin-right: 20px;
 }
