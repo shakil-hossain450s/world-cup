@@ -98,10 +98,6 @@ body{
     background-color: red;
     color: #ffffff;
 }
-.side-button a.active{
-    background-color: #ff0000;
-    color: #ffffff;
-}
 .right-side{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -139,6 +135,24 @@ body{
     margin-right: 20px;
 }
 
+
+/* Other HTML FILE Style  */
+.flag-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 15px 0 15px;
+}
+.flag-img img{
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 90px;
+    height: 50px;
+}
+.upcoming-match .upcoming-match-details{
+    padding: 5;
+    text-align: center;
+}
 /* ===================================
          Footer Section style 
    ===================================*/
