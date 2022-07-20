@@ -137,23 +137,7 @@ body{
 }
 
 
-/* Other HTML FILE Style  */
-.flag-img{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 15px 15px 0 15px;
-}
-.flag-img img{
-    margin-left: 5px;
-    margin-right: 5px;
-    width: 90px;
-    height: 50px;
-}
-.upcoming-match .upcoming-match-details{
-    padding: 5;
-    text-align: center;
-}
+
 /* ===================================
          Footer Section style 
    ===================================*/
@@ -211,7 +195,30 @@ hr{
     color: #000000;
 }
 
-/* Tablet Button */
+/* =====================================
+        Other HTML FILE Style  
+========================================*/
+.flag-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 15px 0 15px;
+}
+.flag-img img{
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 90px;
+    height: 50px;
+}
+.upcoming-match .upcoming-match-details{
+    padding: 5;
+    text-align: center;
+}
+
+/* ===========================================
+            Tablet Button 
+=============================================*/
+
 #tablet{
     display: none;
 }
