@@ -354,6 +354,9 @@ hr{
         margin-right: 10px;
         border: 1px solid lightgray;
     }
+    .side-button a.link-button {
+        padding: 14px 18px;
+    }
     .side-button a.child{
         padding-left: 5px;
         padding-right: 5px;
