@@ -22,8 +22,7 @@ body{
     margin-right: 80px;
 }
 .half-width{
-    width: 50%;
-    position: relative;
+    width: 50%;  
 }
 .half-width h1{
     font-size: 55px;
@@ -38,8 +37,7 @@ body{
 }
 .half-width img{
     width: 100%;
-    position: absolute;
-    bottom: -63px;
+    margin-bottom: -69px;
 }
 .half-width a.button{
     text-decoration: none;
@@ -98,6 +96,10 @@ body{
 }
 .side-button a:hover{
     background-color: red;
+    color: #ffffff;
+}
+.side-button a.active{
+    background-color: #ff0000;
     color: #ffffff;
 }
 .right-side{
@@ -193,4 +195,141 @@ hr{
     background-color: #ffffff;
     color: #000000;
 }
+
+
+/* Media Query */
+/* Mobile Device */
+@media only screen and (max-width:688px){
+    /* header section  */
+    .top-banner{
+        height: 525px;
+    }
+    .flexible{
+        display: flex;
+        flex-direction: column ;
+        margin: 2%;
+        align-items: center;
+        text-align: center;
+    }
+    .half-width{
+        width: 100%;  
+    }
+    .half-width h1{
+        font-size: 28px;
+    }
+    .half-width img{
+        margin-top: 40px;
+        width: 233px;
+        height: 245px;
+    }
+    /* Blog Section  */
+    .middle-section{
+        margin-top: 10%;
+    }
+    .main-parent{
+        display: flex;
+        flex-direction: column;
+    }
+    .side-button{
+        background-color: #ffffff;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        justify-items: center;
+    }
+    .side-button a{
+        border: 1px solid lightgray;
+    }
+    
+    .right-side{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 24px;
+    }
+    .icons span {
+        margin-left: -25px;
+    }
+    /* Footer Section */
+    .footer .contact{
+        display: block;
+        margin-right: 50px;
+    }
+    .footer .contact ul li{
+        margin-bottom: 25px;
+    }
+    .social-media{
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .social-media a i{
+        margin: 0 10px;
+    }
+}
+/* Tablet Device */
+@media only screen and (min-width:688px) and (max-width:992px){
+    .flexible {
+        margin-top: 40px;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    .half-width h1{
+        font-size: 40px;
+    }
+    .half-width img{
+        position: absolute;
+        width: 323px;
+        height: 340px;
+        top: 130px;
+    }
+    /* Blog Section  */
+    .main-parent{
+        display: flex;
+        flex-direction: column;
+    }
+    .left-side{
+        width: 100%;
+    }
+    .right-side{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+    }
+    
+    .side-button{
+        width: 100%;
+        background-color: #ffffff;
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        justify-content: center;
+        padding-right: 10px;
+        padding-left: 2px;
+    }
+    .side-button a{
+        font-size: 18px;
+        width: 185px;
+        margin-right: 10px;
+        border: 1px solid lightgray;
+    }
+    .side-button a.child{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    footer{
+        padding: 20px 0;
+       }
+    .footer .text{
+        margin-top: 40px;
+    }
+    .footer .contact{
+        width: 100%;
+    }
+    .footer .contact ul li{
+        margin-bottom: 40px;
+    }
+    .social-media{
+        margin-top: 10px;
+    }
+}
+    
 
